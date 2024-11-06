@@ -4,7 +4,7 @@ import FinishTodo from "./FinishTodo";
 const Todo = ({ todo }: { todo: { title: string } }) => {
   return (
     <div className='flex justify-between gap-5'>
-      <FinishTodo />
+      <FinishTodo todo={todo} />
       {todo.title}
       <DeleteTodo todo={todo} />
     </div>
